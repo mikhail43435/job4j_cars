@@ -10,5 +10,5 @@ CREATE TABLE IF NOT EXISTS auto_post(
     id              SERIAL PRIMARY KEY,
     text            TEXT,
     created         TIMESTAMP NOT NULL,
-    auto_user_id    INTEGER REFERENCES auto_user(id) NOT NULL
+    auto_user_id    INTEGER REFERENCES auto_user (id)
 );
