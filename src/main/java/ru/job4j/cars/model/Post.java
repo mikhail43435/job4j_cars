@@ -29,4 +29,12 @@ public class Post {
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "auto_post_id")
     private List<PriceHistory> priceHistories;
+
+    @ManyToMany
+    @JoinTable(
+            name = "participates",
+            joinColumns = { @JoinColumn(name = "item_id")},
+            inverseJoinColumns = { @JoinColumn(name = "user_id")}
+    )
+    private List<User> userList;
 }
