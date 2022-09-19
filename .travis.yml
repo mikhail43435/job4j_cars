@@ -25,6 +25,6 @@ env:
 notifications:
   email:
     recipients:
-      -hommp2009@mail.ru
+      -*@mail.ru
     on_success: never # default: change
     on_failure: always # default: always
