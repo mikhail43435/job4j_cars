@@ -7,7 +7,8 @@ CREATE TABLE IF NOT EXISTS auto_user
     password    TEXT NOT NULL
 );
 -- creating table for posts
-CREATE TABLE IF NOT EXISTS auto_post(
+CREATE TABLE IF NOT EXISTS auto_post
+(
     id              SERIAL PRIMARY KEY,
     text            TEXT,
     created         TIMESTAMP NOT NULL,

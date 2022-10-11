@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -36,5 +37,5 @@ public class Post {
             joinColumns = { @JoinColumn(name = "item_id")},
             inverseJoinColumns = { @JoinColumn(name = "user_id")}
     )
-    private List<User> userList;
+    private Set<User> userList;
 }
